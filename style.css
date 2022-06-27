@@ -535,11 +535,6 @@ button {
     opacity: 1;
 }
 
-.text-center{
-    text-align: center;
-}
-
-
 a[data-lightbox] {
     position: relative;
     display: block;
@@ -1102,6 +1097,7 @@ blockquote p{
         padding-left: 0;
         padding-right: 0;
     }
+
 }
 
 @media (max-width: 767px) {
@@ -1114,4 +1110,11 @@ blockquote p{
         max-height: 400px;
         object-fit: cover;
     }
+
+    #bloc-7{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
