@@ -39,6 +39,10 @@ a:hover {
     position: relative;
 }
 
+header{
+    width: 100%;
+}
+
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
@@ -325,7 +329,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -443,6 +447,7 @@ nav .caret {
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .btn {
@@ -476,7 +481,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 40px!important;
 }
 
 .icon-lg {
@@ -530,6 +535,11 @@ button {
     opacity: 1;
 }
 
+.text-center{
+    text-align: center;
+}
+
+
 a[data-lightbox] {
     position: relative;
     display: block;
@@ -544,6 +554,7 @@ a[data-lightbox]:hover::before {
     height: 50px;
     margin-left: -25px;
     border-radius: 50%;
+    padding-top: 3px;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
     font-weight: 100;
@@ -654,11 +665,17 @@ a {
     color: #575757!important;
 }
 
+label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .container {
     max-width: 1000px;
 }
 
 .hero-bloc-text {
+    position: relative;
     font-size: 38px;
 }
 
@@ -677,11 +694,11 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 80%;
     margin: auto auto auto auto;
 }
 
@@ -700,9 +717,32 @@ p {
 }
 
 .social {
-    max-width: 400px;
+    max-width: 50%;
     margin: auto auto auto auto;
 }
+
+.social .fa{
+    width: 32%;
+}
+
+.fa-twitter:hover{
+    color: #1DA1F2!important;
+}
+
+.fa-facebook:hover{
+    color: #3b5998!important;
+}
+
+.fa-dribbble:hover{
+    color: black!important;
+}
+
+.fa-instagram:hover{
+    background-image: -webkit-linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)!important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 h2 {
     font-size: 22px;
@@ -741,6 +781,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .portfolio-row {
@@ -823,6 +865,34 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
+}
+
+blockquote p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.e-mail{
+    text-decoration: underline;
+    color: blue!important;
+}
+
+.e-mail:hover{
+    color: orange!important;
+}
+
+#bloc-5-cta h2{
+    position: relative;
+}
+
+#bloc-6{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#message{
+    max-width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -984,6 +1054,7 @@ h4 {
     .bloc-md {
         padding-left: 0;
         padding-right: 0;
+        width: 80%;
     }
     .bloc-tile-2 .container,
     .bloc-tile-3 .container,
@@ -1036,5 +1107,11 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+
+    .portfolio-thumb{
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
     }
 }

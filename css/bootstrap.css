@@ -2069,6 +2069,12 @@ pre code {
     padding-left: 15px
 }
 
+.col-sm-6{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
 .col-xs-1,
 .col-xs-10,
 .col-xs-11,
@@ -7682,10 +7688,10 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+    background-color: #000 \9;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .carousel-indicators .active {
@@ -7874,6 +7880,13 @@ button.close {
     th.visible-xs {
         display: table-cell !important
     }
+
+    .col-sm-6{
+        margin-bottom: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
 }
 
 @media (max-width:767px) {
